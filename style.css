@@ -1,0 +1,80 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: hsl(0, 0%, 80%);
+}
+.container {
+  background-color: hsl(0, 0%, 15%);
+  border-radius: 10px;
+  width: 400px;
+  overflow: hidden;
+}
+.display {
+  display: flex;
+  background-color: hsl(0, 0%, 1%);
+  padding: 10px;
+  justify-content: left;
+  font-size: 2rem;
+  color: rgb(255, 255, 255);
+}
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.btn {
+  padding: 20px;
+  font-size: 1.5rem;
+  border: 1px solid #dddddd;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: hsl(0, 0%, 89%);
+}
+.btn-operator {
+  font-size: 1.5rem;
+  font-weight: normal;
+  border: 1px solid #dddddd;
+  cursor: pointer;
+}
+.btn-operator:hover {
+  background-color: hsl(0, 0%, 89%);
+}
+.btn-equal {
+  border: 1px solid #dddddd;
+  font-size: 1.5rem;
+  border: 1px solid #dddddd;
+  cursor: pointer;
+}
+.btn-equal:hover {
+  background-color: hsl(0, 0%, 89%);
+}
+.btn-clear {
+  font-size: 1.5rem;
+  border: 1px solid #dddddd;
+  cursor: pointer;
+}
+.btn-clear:hover {
+  background-color: hsl(0, 0%, 89%);
+}
+.buttons:active {
+  background-color: hsl(0, 0%, 100%);
+}
+@media screen and (max-width: 600px) {
+  body {
+    font-size: 2rem;
+    margin: 10px 25px;
+
+  }
+  .display {
+    font-size: 2rem;
+    overflow: hidden;
+  }
+  html{
+    font-size: 12px;
+    width: 100vi;
+  }
+}
